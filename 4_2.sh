@@ -1,0 +1,6 @@
+#!/bin/bash
+
+for i in `seq 1 40 100000000`
+do
+    md5sum <(echo -n iwrupvqb$i) <(echo -n iwrupvqb$((i+1))) <(echo -n iwrupvqb$((i+2))) <(echo -n iwrupvqb$((i+3))) <(echo -n iwrupvqb$((i+4))) <(echo -n iwrupvqb$((i+5))) <(echo -n iwrupvqb$((i+6))) <(echo -n iwrupvqb$((i+7))) <(echo -n iwrupvqb$((i+8))) <(echo -n iwrupvqb$((i+9))) <(echo -n iwrupvqb$((i+10))) <(echo -n iwrupvqb$((i+11))) <(echo -n iwrupvqb$((i+12))) <(echo -n iwrupvqb$((i+13))) <(echo -n iwrupvqb$((i+14))) <(echo -n iwrupvqb$((i+15))) <(echo -n iwrupvqb$((i+16))) <(echo -n iwrupvqb$((i+17))) <(echo -n iwrupvqb$((i+18))) <(echo -n iwrupvqb$((i+19))) <(echo -n iwrupvqb$(($i+20))) <(echo -n iwrupvqb$((i+21))) <(echo -n iwrupvqb$((i+22))) <(echo -n iwrupvqb$((i+23))) <(echo -n iwrupvqb$((i+24))) <(echo -n iwrupvqb$((i+25))) <(echo -n iwrupvqb$((i+26))) <(echo -n iwrupvqb$((i+27))) <(echo -n iwrupvqb$((i+28))) <(echo -n iwrupvqb$((i+29))) <(echo -n iwrupvqb$((i+30))) <(echo -n iwrupvqb$((i+31))) <(echo -n iwrupvqb$((i+32))) <(echo -n iwrupvqb$((i+33))) <(echo -n iwrupvqb$((i+34))) <(echo -n iwrupvqb$((i+35))) <(echo -n iwrupvqb$((i+36))) <(echo -n iwrupvqb$((i+37))) <(echo -n iwrupvqb$((i+38))) <(echo -n iwrupvqb$((i+39)))
+done | grep -m 1 -n "^000000" | sed "s/:.*//"
