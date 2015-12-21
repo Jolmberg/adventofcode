@@ -2,7 +2,6 @@
 
 e=$(head -c 102 /dev/zero | tr '\0' .)
 f=$(cat input18.txt)
-
 for g in `seq 0 99`; do
     a=
     f=$(for x in $e $f $e; do
@@ -15,9 +14,5 @@ for g in `seq 0 99`; do
 	    done | sed '{ s/[0-25-9].#/\./g; s/3.\./#/g; s/[^#.].//g; }'
 	    echo ""
 	done)
-    grep -o "#" <<< $f | wc -l
 done
 grep -o "#" <<< $f | wc -l
-
-
-
